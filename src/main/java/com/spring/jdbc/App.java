@@ -16,11 +16,14 @@ public class App
         Studentdao studentdao = context.getBean(Studentdao.class);
         
         Student student = new Student();
-        student.setId(2);
-        student.setName("Manoj Kumar");
-        student.setCity("Bangalore");
-        int result = studentdao.change(student);
-        System.out.println("Data Changed "+result);
+        student.setId(4);
+        int result = studentdao.delete(student);
+        System.out.println("Deleted "+result);
+		/*
+		 * student.setId(2); student.setName("Manoj Kumar");
+		 * student.setCity("Bangalore"); int result = studentdao.change(student);
+		 * System.out.println("Data Changed "+result);
+		 */
 		/*
 		 * student.setId(4); student.setName("Aadi"); student.setCity("Nashik");
 		 * 
