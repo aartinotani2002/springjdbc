@@ -30,8 +30,7 @@ public class App {
 		 * int result = studentdao.insert(student); System.out.println("Student added :"
 		 * + result);
 		 */
-		Student student = studentdao.getStudent(2);
-		System.out.println(student);
+		
 		
 		List<Student> allStudent = studentdao.getAllStudent();
 		for(Student s : allStudent) {
